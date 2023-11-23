@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    height: 100vh;
+    background-color: antiquewhite;
+
+}
+.countries{
+  display: flex;
+  align-items: center;
+ gap: 24px;
+}
+#countries, .btn{
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: none;
+}
+.btn{
+
+    text-transform: capitalize;
+   
+    background-color: rgb(22, 20, 20);
+    color: aliceblue;
+}
+#details{
+    display: flex;
+flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:32px;
+}
+.flags{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}

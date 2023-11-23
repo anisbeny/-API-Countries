@@ -30,8 +30,14 @@ window.onload = () =>{
                     details.appendChild(capitale);
                     details.appendChild(population);
                     let drapeau = document.createElement("p");
-                    drapeau.innerHTML =`Drapeau : <img src ="${country.flags.svg}" alt="Drapeau de ${country.name.common}" width=100>`;
-                    details.appendChild(drapeau);
+                    let flags = document.createElement('div');
+                    flags.className="flags";
+                    details.appendChild(flags);
+                    drapeau.textContent ="Drapeau:";
+                    let flag = document.createElement('div')
+                    flag.innerHTML =`<img src ="${country.flags.svg}" alt="Drapeau de ${country.name.common}" width=100>`;
+                    flags.appendChild(drapeau);
+                    flags.appendChild(flag);
                 }   
             })
             .catch(error => console.log('error', error));
